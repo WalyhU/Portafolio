@@ -69,7 +69,9 @@ export const Contact = ({ language }) => {
     }
     setTimeout(() => {
       setStatus({});
-      setButtonText("Send");
+      language === "en"
+        ? setButtonText("Send")
+        : setButtonText("Enviar");
     }, 5000);
   };
 
